@@ -1,0 +1,34 @@
+:root{
+    --bs-primary: #0AC2E8;
+    --bs-primary-rgb: 10, 194, 232;
+    --bs-secondary: #01284F;
+    --bs-secondary-rgb: 1, 40, 79;
+
+    --bs-link-color: var(--bs-primary);
+    --bs-link-color-rgb: var(--bs-primary-rgb);
+    --bs-link-hover-color: var(--bs-primary);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+
+    --bs-bg-custom-light: #F1FBFC;
+    --bs-bg-custom-light-rgb: 241, 251, 252;
+}
+
+[data-bs-theme="light"]{
+    --bs-primary: #0AC2E8;
+    --bs-primary-rgb: 10, 194, 232;
+    --bs-secondary: #01284F;
+    --bs-secondary-rgb: 1, 40, 79;
+    --bs-border-color: var(--bs-primary);
+    --bs-link-color: var(--bs-primary);
+    --bs-link-color-rgb: var(--bs-primary-rgb);
+    --bs-link-hover-color: var(--bs-primary);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    .form-control{
+        --bs-border-width: 0;
+    }
+}
+
+[data-bs-theme="dark"]{
+    --bs-bg-custom-light: #000;
+    --bs-bg-custom-light-rgb: 0,0,0;
+}
