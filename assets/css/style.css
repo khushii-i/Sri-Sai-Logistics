@@ -28908,6 +28908,35 @@ textarea {
 }
 }
 
+/* mission */
+.mission-vision-section {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.mission-img {
+  max-width: 70%;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  border-radius: 15px;
+}
+
+.mission-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(230, 57, 70, 0.3);
+}
+
+.hover-box {
+  transition: all 0.4s ease;
+  background-color: #fff;
+}
+
+.hover-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.content-box p {
+  line-height: 1.7;
+}
 
 
   

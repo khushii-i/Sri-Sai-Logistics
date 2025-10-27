@@ -10,7 +10,7 @@
       type="images/png"
       href="assets/images/sri-sai-logo.png"
     />
-
+     
     <!-- Google fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
@@ -19,8 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Yantramanav:wght@100;300;400;500;700;900&amp;display=swap"
       rel="stylesheet"
     />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  rel="stylesheet"
+/>
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
@@ -310,11 +312,11 @@
                 </a>
               </li>
 
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="btn btn-primary text-uppercase" href="tracking.html">
                   Tracking
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -615,7 +617,82 @@
 
      
    <!-- vision mission -->
+     <!-- AOS Animation CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<section class="mission-vision-section py-5">
+  <h3 class="mb-0 text-center">Our Mission & Vision</h3>
+  <div class="container">
      
+    <!-- OUR MISSION -->
+    <div class="row align-items-center mt-3" data-aos="fade-right">
+      <!-- Left: Image -->
+      <div class="col-md-6 text-center mb-4 mb-md-0 mt-3">
+        <img src="assets/images/mission.png" alt="Mission" class="img-fluid rounded shadow mission-img">
+      </div>
+      <!-- Right: Content -->
+      <div class="col-md-6">
+        <div class="content-box p-4 shadow-sm rounded hover-box">
+          <div class="d-flex align-items-center mb-3">
+            
+            <h3 class="fw-bold text-danger mb-0">Our Mission</h3>
+          </div>
+          <p class="text-muted fs-5">
+            We are committed to providing safe, dependable transportation
+service to our customers and To achieve our objectives in an
+environment of fairness and courtesy to our clients, employees,
+vendors, investors and the society.
+ <ul>
+          <li>Prompt & Positive response.</li>
+          <li>Online tracking of every G.R</li>
+          <li>Team Performance.</li>
+          <li>On time delivery of goods.</li>
+          <li>To reduce customer complaints.</li>
+        </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUR VISION -->
+    <div class="row align-items-center flex-md-row-reverse" data-aos="fade-left">
+      <!-- Right: Image -->
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="assets/images/vision.png" alt="Vision" class="img-fluid rounded shadow mission-img">
+      </div>
+      <!-- Left: Content -->
+      <div class="col-md-6">
+        <div class="content-box p-4 shadow-sm rounded hover-box">
+          <div class="d-flex align-items-center mb-3">
+            
+            <h3 class="fw-bold text-primary mb-0">Our Vision</h3>
+          </div>
+          <p class="text-muted fs-5">
+             At SSLEPL, we have a goal-oriented vision that clearly identifies
+where we’re going and how we’re going to get there. With a view
+to being the leading provider of logistics solutions we continue to
+further develop our position as a global market leader in
+transport and logistics solutions.
+To achieve this vision and meet our goals, we proactively and
+constantly look for new possibilities. Therefore, an important part
+of our vision is to attract and retain th best employee in the business.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- AOS Animation Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+   
      
 
 
