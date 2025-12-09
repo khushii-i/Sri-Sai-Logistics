@@ -3,7 +3,7 @@ document.querySelector("#callRequestForm").addEventListener("submit", async (e) 
 
     const name = document.getElementById("InputName-2").value;
     const email = document.getElementById("InputEmail-2").value;
-    const freightType = document.getElementById("freightSelect").value;
+    const InputState = document.getElementById("InputState").value;
     const distance = document.getElementById("InputDistance").value;
     const kilo = document.getElementById("InputWeight").value;
     const Centimeter = document.getElementById("InputHeight").value;
@@ -12,7 +12,7 @@ document.querySelector("#callRequestForm").addEventListener("submit", async (e) 
         const res = await fetch("https://srisailogistics.vercel.app/api/quote", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name, email, freightType, distance, kilo, Centimeter })
+            body: JSON.stringify({ name, email, InputState, distance, kilo, Centimeter })
         });
 
         const data = await res.json();
