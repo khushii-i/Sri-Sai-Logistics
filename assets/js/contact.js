@@ -15,6 +15,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
         });
 
         const data = await res.json();
+        console.log(data);
         alert(data.message); 
 
         
