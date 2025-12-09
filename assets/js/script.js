@@ -336,38 +336,38 @@
 
 
   // =================  Sending Mail =============
-  $(document).on('submit', '#contactForm, #subscriptionForm, #callRequestForm',function(e) {
-    e.preventDefault();
+  // $(document).on('submit', '#contactForm, #subscriptionForm, #callRequestForm',function(e) {
+  //   e.preventDefault();
 
-    var form = $(this);
-    var formData = form.serialize();
-    var responseDiv = form.find('.response');
-    form.find('[type="submit"]').prop('disabled', true); 
-    formData += '&id='+form.attr('id');
+  //   var form = $(this);
+  //   var formData = form.serialize();
+  //   var responseDiv = form.find('.response');
+  //   form.find('[type="submit"]').prop('disabled', true); 
+  //   formData += '&id='+form.attr('id');
 
-    responseDiv.html('<p>Working....</p>');
+  //   responseDiv.html('<p>Working....</p>');
 
-    $.ajax({
-      type: 'POST',
-      url: 'mail.php',
-      data: formData,
-      success: function(response) {
-       var data = JSON.parse(response);
-        if (data.error) {
-          responseDiv.empty().html('<div class="alert alert-error">'+data.msg+'</div>');
-          // You can add additional actions for success here
-        } else {
-          responseDiv.empty().html('<div class="alert alert-sucess">'+data.msg+'</div>');
-          form.get(0).reset();
-        }
-        form.find('[type="submit"]').prop('disabled', false); 
-      },
-      error: function(error) {
-        console.log('Error:', error);
-        form.find('[type="submit"]').prop('disabled', false); 
-      }
-    });
-  });
+  //   $.ajax({
+  //     type: 'POST',
+  //     url: 'https://srisailogistics.vercel.app/api/contact',
+  //     data: formData,
+  //     success: function(response) {
+  //      var data = JSON.parse(response);
+  //       if (data.error) {
+  //         responseDiv.empty().html('<div class="alert alert-error">'+data.msg+'</div>');
+  //         // You can add additional actions for success here
+  //       } else {
+  //         responseDiv.empty().html('<div class="alert alert-sucess">'+data.msg+'</div>');
+  //         form.get(0).reset();
+  //       }
+  //       form.find('[type="submit"]').prop('disabled', false); 
+  //     },
+  //     error: function(error) {
+  //       console.log('Error:', error);
+  //       form.find('[type="submit"]').prop('disabled', false); 
+  //     }
+  //   });
+  // });
   // =================  Sending Mail =============
 
 

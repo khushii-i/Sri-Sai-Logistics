@@ -18,7 +18,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
         alert(data.message); 
 
         
-        e.target.reset(); 
+        e.target.reset();
 
     } catch (err) {
         console.error("Form submission error:", err);
