@@ -11,10 +11,10 @@ document.querySelector("form").addEventListener("submit", async (e) => {
 
 
     try {
-        const res = await fetch("https://srisailogistics.vercel.app/api/contact", {
+        const res = await fetch("https://srisailogistics.vercel.app/api/quote", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ Name, email,freightSelect,Distance, Kilo, Centimeter })
+            body: JSON.stringify({ name, email, freightType, distance, kilo, Centimeter })
         });
 
         const data = await res.json();
