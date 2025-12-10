@@ -28937,7 +28937,70 @@ textarea {
 .content-box p {
   line-height: 1.7;
 }
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
 
+.navbar-brand .logo {
+    display: inline-block;
+}
+
+.navbar-brand .logo-text {
+    display: inline-block;
+    line-height: 1.1;
+    color: #003366;
+    font-weight: 900;
+    font-size: 15px;
+    white-space: nowrap; 
+    margin-top: 34px; 
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: #f7f9fc;
+  padding: 12px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  animation: bounce 2s infinite, glow 1.5s infinite alternate;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Glow animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 0 12px rgba(0, 255, 0, 0.3);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.6), 0 0 40px rgba(0, 255, 0, 0.4);
+  }
+}
 
   
 

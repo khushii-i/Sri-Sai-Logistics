@@ -192,7 +192,7 @@
     if ($('.testimonialSwiper-3').length > 0) {
   new Swiper(".testimonialSwiper-3", {
     loop: true,
-    speed: 600, 
+    speed: 9000, 
     spaceBetween: 24,
     grabCursor: true,
 
